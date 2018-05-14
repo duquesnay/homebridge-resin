@@ -10,9 +10,8 @@ FROM resin/raspberrypi3-node:6-slim
 #    alsa-utils libasound2-dev && \
 #    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && apt-get install -yq \
-    git make g++ nodejs python && \
-#    libavahi-compat-libdnssd-dev && \
+RUN apt-get update && \
+    apt-get install -yq git make g++ nodejs python && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g homebridge
@@ -22,7 +21,7 @@ RUN npm install -g homebridge-sonos
 
 WORKDIR /root/
 
-COPY homebridge-config.json .homebrew/config.json
+COPY homebridge-config.json /root/.homebridge/config.json
 
 
 # server.js will run when container starts up on the device

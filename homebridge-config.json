@@ -2,13 +2,13 @@
   "accessories": [
     {
       "accessory": "Sonos",
-      "name": "Bedroom Speakers",
-      "room": "Bedroom"
-    }
-     {
-      "accessory": "Sonos",
       "name": "Living Room Speakers",
       "room": "Living Room"
+    },
+    {
+      "accessory": "Sonos",
+      "name": "Bedroom Speakers",
+      "room": "Bedroom"
     }
   ]
 }
