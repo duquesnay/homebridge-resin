@@ -20,7 +20,7 @@ RUN npm install -g homebridge-sonos
 
 # Defines our working directory in container
 
-WORKDIR /home/root/
+WORKDIR /root/
 
 COPY config.json .homebrew/config.json
 
