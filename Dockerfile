@@ -22,8 +22,7 @@ RUN npm install -g homebridge-sonos
 
 WORKDIR /root/
 
-COPY config.json .homebrew/config.json
-
+COPY homebridge-config.json .homebrew/config.json
 
 
 # server.js will run when container starts up on the device
